@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/map.css" />
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=98b65c9b2d54d93b69d35f0f336f2efe"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&libraries=services,clusterer,drawing"
+    ></script>
+    <script src="../js/map.js"></script>
+    <title>지도</title>
+  </head>
+  <body>
+    <div class="map-page">
+      <header class="map_header">
+        <img src="../../image/image 1.png" alt="컴세바로고" />
+        <div class="map_header_right">
+          <a href="">오시는 길</a>
+          <a href="/src/html/guestBook.html">방명록</a>
+        </div>
+      </header>
+      <div class="map_body">
+        <div
+          class="map_body_left"
+          id="map"
+          style="width: 400px; height: 500px"
+        ></div>
+        <div class="map_body_right">
+          <p>INCHRON COMSEBA</p>
+          <p>컴세바 써니랩학원인천지점</p>
+          <p>인천광역시 연수구 동춘동 (먼우금로 92) 대광빌딩 5층</p>
+          <p>CALL : 032.822.4300 / 010. 4591. 8351</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      var container = document.getElementById("map");
+      var options = {
+        center: new kakao.maps.LatLng(37.3980292, 126.6438333),
+        level: 3,
+      };
+
+      var map = new kakao.maps.Map(container, options);
+
+      var marker = new kakao.maps.marker({
+        position: new kakao.maps.LatLng(37.3980292, 126.6438333),
+        map: map,
+      });
+    </script>
+    <script>
+      var markerPosition = new kakao.maps.LatLng(37.3980292, 126.6438333);
+
+      // 마커를 생성합니다
+      var marker = new kakao.maps.Marker({
+        position: markerPosition,
+      });
+
+      // 마커가 지도 위에 표시되도록 설정합니다
+      marker.setMap(map);
+    </script>
+  </body>
+</html>

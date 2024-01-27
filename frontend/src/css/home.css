@@ -1,0 +1,381 @@
+@import url("./reset.css");
+@import url("./common.css");
+.home_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home_header_right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.home_header_right a {
+  color: var(--main-color);
+}
+
+.home_intro {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 5rem;
+}
+
+.home_intro_left {
+  width: 50%;
+}
+
+.home_intro_left_text {
+  color: var(--main-color);
+}
+
+.home_intro_left_text p:nth-child(2) {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.home_intro_left_rink-btn {
+  margin-top: 2rem;
+}
+
+.home_intro_left_sns {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+}
+
+.home_intro_left_sns p {
+  font-size: 40px;
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+.home_intro_left_sns_ img {
+  cursor: pointer;
+}
+
+.home_intro_right {
+  width: 50%;
+}
+
+.home_intro_right img {
+  width: 100%;
+}
+
+.home_intro_left_rink-btn {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.home_description {
+  text-align: center;
+}
+
+.home_description_logo-container {
+  margin: auto;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  width: 103px;
+  height: 107px;
+  background-color: var(--logo-background);
+}
+
+.home_description_logo {
+  color: white;
+  font-size: 100px;
+  font-weight: 900;
+}
+
+.home_description {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.home_description p:nth-of-type(1) {
+  margin-top: 3rem;
+  font-size: 48px;
+  font-weight: 900;
+}
+.home_description p:nth-of-type(2) {
+  color: var(--dark-gray);
+}
+
+.home_description p:nth-of-type(n) {
+  margin-top: 3rem;
+}
+
+.home_description p:nth-of-type(8) {
+  margin-top: 8rem;
+}
+
+.home_description p:nth-of-type(9) {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.home_description span.bold {
+  font-weight: 700;
+  color: var(--dark-gray);
+}
+
+.home_learn-skills_title {
+  color: var(--dark-gray);
+  margin-top: 20rem;
+}
+
+.home_learn-skills_title .bold {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.home_learn-skills_title_flex-box {
+  display: flex;
+  color: var(--main-color);
+}
+
+.home_learn-skills_container {
+  width: 70%;
+  margin: 5rem auto;
+  border: 1px solid var(--dark-gray);
+  border-radius: 10px;
+  padding: 3rem;
+  position: relative;
+}
+
+.home_learn-skills_flex-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.home_learn-skills_flex-box:last-child {
+  align-items: flex-end;
+  margin-top: -2rem;
+}
+
+.home_learn-skills_step {
+  width: 20%;
+  border-radius: 20px;
+  color: white;
+  padding: 2rem;
+}
+
+.home_learn-skills_step p:first-child {
+  margin-bottom: 2rem;
+}
+
+.home_learn-skills_flex-box .step1 {
+  height: 100px;
+  background-color: var(--dark-gray);
+}
+
+.home_learn-skills_flex-box .step2 {
+  height: 160px;
+  background-color: var(--main-color);
+}
+
+.home_learn-skills_flex-box .step3 {
+  height: 100px;
+  background-color: var(--soft-grey);
+  color: black;
+}
+
+.home_learn-skills_flex-box .step4 {
+  height: 160px;
+  background-color: var(--soft-grey);
+  color: black;
+}
+
+.home_learn-skills_flex-box .step5 {
+  height: 100px;
+  background-color: var(--dark-gray);
+}
+
+.home_learn-skills_flex-box .step6 {
+  height: 160px;
+  background-color: var(--main-color);
+}
+
+.home_learn-skills_select-skill {
+  width: 50%;
+  position: absolute;
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home_learn-skills_skill-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: var(--soft-grey);
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.home_learn-skills_skill-box:hover {
+  background-color: var(--dark-gray);
+  color: white;
+}
+
+.home_learn-skills_select-skill .selected {
+  color: white;
+  background-color: var(--dark-gray);
+}
+
+.home_learn-skills_sub_title .bold {
+  margin-top: 15rem;
+  text-align: center;
+  font-weight: 900;
+  color: var(--main-color);
+  font-size: 48px;
+}
+
+.home_learn-skills_sub_box1 {
+  align-items: center;
+  margin-top: 8rem;
+  display: flex;
+  font-weight: 800;
+  font-size: 26px;
+  justify-content: space-around;
+  color: var(--main-color);
+}
+
+.home_learn-skills_sub_box1 .bold {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.home_learn-skills_sub_box2 {
+  margin-top: 8rem;
+  display: flex;
+  font-weight: 800;
+  font-size: 26px;
+  justify-content: space-around;
+  color: var(--main-color);
+}
+
+.home_learn-skills_sub_box2 .bold {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.home_learn-tech_title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  color: var(--dark-gray);
+}
+.home_learn-tech_title_ACA {
+  color: var(--main-color);
+  margin-left: 2rem;
+}
+.home_learn-tech-lan_subtitle {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 15rem;
+  font-weight: 900;
+  color: var(--main-color);
+}
+.home_learn-tech-lan_s {
+  color: var(--dark-gray);
+}
+.home_learn-tech-lan_img {
+  display: flex;
+  margin: 2rem;
+  justify-content: center;
+}
+.home_learn-tech-lan_img-Python {
+  margin-left: 5rem;
+}
+.home_learn-tech-lan_img-JAVA {
+  margin-left: 5rem;
+}
+.home_learn-tech-tech_subtitle {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 15rem;
+  font-weight: 900;
+  color: var(--main-color);
+}
+.home_learn-tech-tech_subtitle-s {
+  color: var(--dark-gray);
+}
+.home_learn-tech-tech_img {
+  display: flex;
+  margin: 2rem;
+  justify-content: center;
+}
+.home_learn-tech-tech_img-css {
+  margin-left: 5rem;
+}
+.home_learn-tech-tech_img-js {
+  margin-left: 5rem;
+}
+.home_learn-tech-tech_img-re {
+  margin-left: 5rem;
+}
+.home_why-com_subtitle {
+  margin-top: 15rem;
+  text-align: end;
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--main-color);
+}
+.home_why-com_subtitle-f {
+  margin-right: 9rem;
+}
+.home_why-com_subtitle-s {
+  color: var(--dark-gray);
+}
+.home_why-com_subtitle .intro {
+  font-size: 15px;
+}
+
+.home_why-com_inform-f img {
+  margin: 3rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  border-radius: 30px;
+  background-color: var(--dark-gray);
+  width: 15rem;
+}
+
+.home_why-com_inform-s img {
+  margin: 3rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  border-radius: 30px;
+  background-color: var(--main-color);
+  width: 15rem;
+}
+.home_why-com_inform-t img {
+  margin: 3rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  border-radius: 30px;
+  background-color: var(--dark-gray);
+  width: 15rem;
+}
+.home_why-com_inform {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-around;
+}
+.home_tmi {
+  background-color: var(--soft-grey);
+  color: var(--main-color);
+  padding: 0 10%;
+}

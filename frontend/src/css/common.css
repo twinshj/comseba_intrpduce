@@ -1,0 +1,24 @@
+body {
+  padding: 0 10%;
+  margin-top: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --main-color: #445964;
+  --dark-gray: #263138;
+  --logo-background: #000000;
+  --soft-grey: rgba(233, 233, 233, 1);
+  --comment-time: #18a0fb;
+  --btn-tt: #515151;
+}
+
+.border-box {
+  border: none;
+  border-radius: 10px;
+  background: var(--dark-gray);
+  color: white;
+}
